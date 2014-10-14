@@ -28,17 +28,18 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="20dp"
-                android:text="BlueMor"
+                android:text="Hick 嘿客"
                 android:textColor="#ffffff"
                 android:textSize="25sp" />
         </LinearLayout>
 
+        <!-- 右侧菜单下方的提示 -->
         <TextView
             android:id="@+id/tv_mail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:text="wyfmor@163.com"
+            android:text="Goddamn Hick, QQ/微信: 3715397"
             android:textColor="#ffffff"
             android:textSize="15sp" />
 

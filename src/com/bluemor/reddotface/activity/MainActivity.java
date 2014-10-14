@@ -82,22 +82,17 @@ public class MainActivity extends Activity {
 				startActivity(intent);
 			}
 		});
+		//=== 这里定义右侧菜单，多了会滚屏显示
 		lv = (ListView) findViewById(R.id.lv);
 		lv.setAdapter(new ArrayAdapter<String>(MainActivity.this,
-				R.layout.item_text, new String[] { "NewBee", "ViCi Gaming",
-						"Evil Geniuses", "Team DK", "Invictus Gaming", "LGD",
-						"Natus Vincere", "Team Empire", "Alliance", "Cloud9",
-						"Titan", "Mousesports", "Fnatic", "Team Liquid",
-						"MVP Phoenix", "NewBee", "ViCi Gaming",
-						"Evil Geniuses", "Team DK", "Invictus Gaming", "LGD",
-						"Natus Vincere", "Team Empire", "Alliance", "Cloud9",
-						"Titan", "Mousesports", "Fnatic", "Team Liquid",
-						"MVP Phoenix" }));
+				R.layout.item_text, new String[] { "第一章：基本控件使用", "第二章：待定",
+						"第n章: service ", "第 n+1 章: Broadcast Receiver",
+						"结尾" }));
 		lv.setOnItemClickListener(new OnItemClickListener() {
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View arg1,
 					int position, long arg3) {
-				Util.t(getApplicationContext(), "click " + position);
+				Util.t(getApplicationContext(), "你点了菜单， 索引编号 " + position);
 			}
 		});
 		iv_icon.setOnClickListener(new OnClickListener() {
